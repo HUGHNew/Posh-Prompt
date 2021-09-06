@@ -1,7 +1,7 @@
 # Posh-Prompt
 a mixture JSON file of slimfat and bubbleline
 
-- [] update the method to use
+- [ ] update the method to use
 
 一份不完全的参考:<https://zhuanlan.zhihu.com/p/144364422>
 
