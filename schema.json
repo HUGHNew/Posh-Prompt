@@ -15,7 +15,8 @@
                     "foreground": "#7a7374",
                     "properties": {
                         "prefix": " \uE235 ",
-                        "display_mode": "always"
+                        "display_mode": "environment",
+                        "home_enabled":true
                     }
                 },
                 {
