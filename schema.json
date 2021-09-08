@@ -15,7 +15,7 @@
                     "foreground": "#7a7374",
                     "properties": {
                         "prefix": " \uE235 ",
-                        "display_mode": "environment"
+                        "display_mode": "always"
                     }
                 },
                 {
@@ -77,10 +77,7 @@
                 {
                     "type": "os",
                     "style": "diamond",
-                    "trailing_diamond": "\uE0B4",
-                    "leading_diamond": "\uE0B6",
                     "foreground": "#9B6BDF",
-                    "background": "#424242",
                     "properties": {
                         "alpine": "\uf300",
                         "arch": "\uf303",
@@ -99,7 +96,7 @@
                         "wsl": "\ue712",
                         "wsl_separator": " on ",
                         "windows": "\ue70f",
-                        "postfix": "\u276F"
+                        "postfix": " λ>"
                     }
                 }
             ]
