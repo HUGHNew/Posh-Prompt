@@ -16,18 +16,18 @@
                     "properties": {
                         "prefix": " \uE235 ",
                         "display_mode": "environment",
-                        "home_enabled":true
+                        "home_enabled": true,
+                        "display_version": false
                     }
                 },
                 {
-                    "type": "path",
-                    "style": "diamond",
-                    "foreground": "#9B6BDF",
-                    "background": "#424242",
+                    "type": "node",
+                    "style": "powerline",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#ffffff",
+                    "background": "#6CA35E",
                     "properties": {
-                        "prefix": "<#f2f200> \ue5ff </>",
-                        "style": "full",
-                        "enable_hyperlink": true
+                        "prefix": " \uE718 "
                     }
                 }
             ]
@@ -39,33 +39,10 @@
                 {
                     "type": "time",
                     "style": "diamond",
-                    "trailing_diamond": "\u2593\ue0c6",
-                    "foreground": "#fafafa",
-                    "background": "#2f2f2f",
                     "properties": {
                         "time_format": "15:04:05",
-                        "postfix": "<#007ACC> \uf64f </>"
-                    }
-                },
-                {
-                    "type": "battery",
-                    "style": "diamond",
-                    "trailing_diamond": "\uE0B4",
-                    "leading_diamond": " \uE0B6",
-                    "foreground": "#9B6BDF",
-                    "background": "#424242",
-                    "properties": {
-                        "battery_icon": "",
-                        "discharging_icon": "\u21E3 ",
-                        "charging_icon": "\u21E1 ",
-                        "charged_icon": "\u25CF ",
-                        "color_background": false,
-                        "charged_color": "#4caf50",
-                        "charging_color": "#40c4ff",
-                        "discharging_color": "#ff5722",
-                        "prefix": "",
-                        "postfix": "",
-                        "display_charging": true
+                        "prefix": "[",
+                        "postfix": "]"
                     }
                 }
             ]
@@ -96,8 +73,52 @@
                         "ubuntu": "\uf31c",
                         "wsl": "\ue712",
                         "wsl_separator": " on ",
-                        "windows": "\ue70f",
-                        "postfix": " λ>"
+                        "windows": "\ue70f"
+                    }
+                },
+                {
+                    "type": "path",
+                    "style": "diamond",
+                    "properties": {
+                        "style": "full",
+                        "enable_hyperlink": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "battery",
+                    "style": "diamond",
+                    "properties": {
+                        "discharging_icon": "\u21E3 ",
+                        "charging_icon": "\u21E1 ",
+                        "charged_icon": "\u25CF ",
+                        "color_background": false,
+                        "charged_color": "#4caf50",
+                        "charging_color": "#40c4ff",
+                        "discharging_color": "#ff5722",
+                        "prefix": "",
+                        "postfix": "",
+                        "display_charging": true
+                    }
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#9B6BDF",
+                    "properties": {
+                        "text": "λ >"
                     }
                 }
             ]
@@ -109,9 +130,9 @@
                 {
                     "type": "text",
                     "style": "plain",
-                    "foreground": "#7a7a7a",
+                    "foreground": "#FFCE5C",
                     "properties": {
-                        "text": "\u276E"
+                        "text": "<"
                     }
                 },
                 {

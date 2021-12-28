@@ -4,9 +4,9 @@
 
 根据 **slimfat** 和 **bubbleline** 两个主题更改出来的新主题
 
-- [ ] update the method to use
+- [x] update the method to use
 - [x] en version
-- [ ] zh_CN version
+- [x] zh_CN version
 
 
 
@@ -47,6 +47,50 @@ Install-Module oh-my-posh -Scope AllUsers
 
 ### 添加设置
 
+在 PowerShell 中编辑 `$profile`
+
+```powershell
+notepad $profile
+```
+
+使用任何你喜欢的编辑器都行
+
+```powershell
+#-------------------------------  Set Profile BEGIN    -------------------------
+Import-Module oh-my-posh
+# Set-PoshPrompt -Theme slimfat
+Set-PoshPrompt -Theme schema
+# -Theme 后面的参数表示主题名
+#-------------------------------  Set Profile END    -------------------------
+```
 
 
 ### 添加新主题
+
+查看现有主题
+
+```powershell
+Get-PoshThemes
+```
+
+主题显示完之后 你会看见主题的保存路径 一般是 `Documents/PowerShell/Modules/oh-my-posh/themes`
+
+![PoshThemes](images/Themes.png)
+
+<center>结果如图</center>
+
+修改一个现有的主题或者新建一个主题文件都可以
+
+文件的默认后缀是 `.omp.json`
+
+下载这里的 `schema.json` 到主题文件夹 重开终端就行
+
+### 权限报错
+
+如果没有执行 `ps1` 脚本的权限
+
+```powershell
+set-ExecutionPolicy RemoteSigned
+```
+
+PowerShell输入上述命令
